@@ -33,7 +33,7 @@ function showAnswer() {
 let currentJoke = ''; // Store current joke delivery for showing later
 
 async function fetchJoke() {
-  const apiUrl = "https://v2.jokeapi.dev/joke/Any?type=twopart";
+  const apiUrl = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,explicit&type=twopart";
 
   try {
     const response = await fetch(apiUrl);
